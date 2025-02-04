@@ -3,7 +3,7 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: login, security, limit login attempts, limit attempts, failed attempts, login attempt, hack, protection, authentication, deny list, allow list, brute force
 Requires at least: 5.6
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 1.3.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
