@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: login, security, limit login attempts, limit attempts, failed attempts
-Requires at least: 5.6
-Tested up to: 6.8
-Stable tag: 1.3.1
+Requires at least: 6.2
+Tested up to: 6.8.2
+Stable tag: 1.3.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,10 +47,12 @@ https://www.youtube.com/watch?v=xZCTEjVfu4Q
 * Send email alerts for blocked and denylisted users to:
 	* User email
 	* Custom email
-* Fully compatible with the latest WordPress version
-* Easy-to-use interface with fast configuration
-* Step-by-step documentation and video tutorials
-* Multilingual support and RTL ready
+* Limit Attempts Captcha for default forms
+* Limit Attempts export/import
+* Compatible with latest WordPress version
+* Incredibly simple settings for fast setup without modifying code
+* Detailed step-by-step documentation and videos
+* Multilingual and RTL ready
 
 > **Pro Features**
 >
@@ -202,6 +204,12 @@ This may happen when sending emails is enabled. It doesn't affect plugin perform
 13. Tab with Statistics.
 
 == Changelog ==
+
+= V1.3.2 - 04.08.2025 =
+* Update : BWS panel section was updated.
+* Update : All functionality was updated for WordPress 6.8.2.
+* New: Limit Attempts export/import was added.
+* Bugfix : Fixed small bags.
 
 = V1.3.1 - 30.04.2024 =
 * Update : Security fixes.
@@ -355,6 +363,15 @@ This may happen when sending emails is enabled. It doesn't affect plugin perform
 * NEW : Added messages in login form.
 
 == Upgrade Notice ==
+
+= V1.3.2 =
+* The compatibility with new WordPress version updated.
+* Usability improved.
+* New features added.
+* Bugs fixed.
+
+= V1.3.1 =
+* Bugs fixed.
 
 = V1.3.0 =
 * The compatibility with new WordPress version updated.

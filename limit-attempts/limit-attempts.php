@@ -4,7 +4,7 @@ Plugin Name: Limit Attempts by BestWebSoft
 Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/
 Description: Protect WordPress website against brute force attacks. Limit rate of login attempts.
 Author: BestWebSoft
-Version: 1.3.1
+Version: 1.3.2
 Text Domain: limit-attempts
 Domain Path: /languages
 Author URI: https://bestwebsoft.com/
@@ -596,8 +596,10 @@ if ( ! function_exists( 'register_lmtttmpts_settings' ) ) {
 			 * @deprecated since 1.2.9
 			 * @todo remove after 20.09.2021
 			 */
-
-			$wpdb->query( 'ALTER TABLE `' . $wpdb->prefix . 'lmtttmpts_failed_attempts` ADD `block_start` DATETIME AFTER `block_quantity`;' );
+			$column_exists = $wpdb->query( 'SHOW COLUMNS FROM `' . $wpdb->prefix . 'lmtttmpts_failed_attempts` LIKE "block_start";' );
+			if ( empty( $column_exists ) ) {
+				$wpdb->query( 'ALTER TABLE `' . $wpdb->prefix . 'lmtttmpts_failed_attempts` ADD `block_start` DATETIME AFTER `block_quantity`;' );
+			}
 			/* end deprecated */
 
 			lmtttmpts_create_table();
